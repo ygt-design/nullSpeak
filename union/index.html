@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Part 3 — Union</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script defer src="../resp.js"></script>
+
+</head>
+
+<body>
+  <div class="mobile-message">
+    Sorry, the site is not optimized for mobile viewing.
+  </div>
+
+  <div id="cover">
+    <span class="part"> PART 3 </span>
+    UNION
+  </div>
+
+  <div id="container">
+    <div class="thresh">
+      <h1>לֹאخഉ</h1>
+    </div>
+
+    <div id="letters">
+
+      <div class="single">خ</div>
+      <div class="single">n</div>
+      <div class="single">ğ</div>
+      <div class="single">א</div>
+      <div class="single">γ</div>
+      <div class="single">ஃ</div>
+      <div class="single">h</div>
+      <div class="single">0</div>
+      <div class="single">לֹ</div>
+      <div class="single">1</div>
+      <div class="single">ഉ</div>
+      <div class="single">ㅇ</div>
+      <div class="single">ᠭ</div>
+      <div class="single">ห</div>
+      <div class="single">ð</div>
+      <div class="single">இ</div>
+      <div class="single">ຫ</div>
+      <div class="single">ฐ</div>
+
+    </div>
+
+    <div class="typeHead">
+      TYPE SOMETHING
+    </div>
+
+    <div id="sketchHolder"></div>
+
+    <div class="eightyFour">
+      <span class="lie"> Ø </span>
+      <!-- <img src="./images/eightyFour.gif" alt="" style="opacity: 0; height: 0%;"> -->
+    </div>
+
+    <section class="bottom">
+
+      <div class="links">
+
+        <a href="../war/index.html">
+          <div class="hyper">
+            <p>
+              PART 2 — WAR
+            </p>
+          </div>
+        </a>
+
+        <a href="../nullSpeak/index.html">
+          <div class="hyper">
+            <p>
+              PART 4 — *
+            </p>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="hyper" onclick="myFunction()">
+        <p>
+          READ EXPANDED SUMMARY
+        </p>
+      </div>
+
+      <div id="myDIV" style="display: none; color: white;">
+        <p>
+          The new world state of Un was created in the aftermath of the war, and it aimed to bring unity and order to
+          the world. The name "Un" was derived from the French word for "one," and it reflected the government's belief
+          in having a single, unified culture for the entire world. <br><br>
+          To achieve this goal, the government of Un believed that having a single culture was paramount. To that end,
+          they set out to create a homogenised culture, one in which all people shared the same beliefs, values, and
+          norms. A key component of this cultural unification was a single language, which was seen as necessary for
+          creating a common identity and understanding. <br><br>
+          The idea of a single culture and language was met with resistance from some quarters, who saw it as an
+          infringement on their individual freedoms and cultural heritage. However, the government of Un was determined
+          to carry out its vision, and it went to great lengths to enforce its cultural and linguistic policies. The
+          result was a world that was culturally uniform and monolithic, but also one that was rife with tension and
+          dissent. <br><br>
+          The world of Un was a bleak one, with a suppressed and heavily monitored population living in fear of
+          expressing their thoughts or opinions. People who broke the law and spoke in a language other than Null Speak
+          were immediately arrested and punished. The government used their monopoly on language to control the flow of
+          information, spreading only the information they deemed fit for the population to know. <br><br>
+          The population was in a state of constant uncertainty and anxiety, as the government monitored all forms of
+          communication, from the most personal conversations to public speeches. People became afraid to express their
+          thoughts and emotions, leading to a society of apathy and conformity. The once diverse and vibrant cultures
+          were suppressed, and people were reduced to mere automatons following the government's orders. <br><br>
+          The erasure of history also meant that people lost touch with their roots and cultural heritage. They had no
+          way of knowing about their ancestors or the events that shaped the world. The government controlled the
+          narrative, painting a picture of a perfect society where everyone was happy and united. But this was far from
+          the truth. The society of Un was one of oppression, where people lived in fear and without the ability to
+          express themselves freely in any form of communication. <br><br>
+          In the context of this dystopia, the government's use of the "Null Speak" language as an analog form of
+          communication is based on the ideas of Gregory Bateson, who differentiated between analog and digital forms of
+          communication. Analog communication is continuous and can convey a wide range of meanings, whereas digital
+          communication is discrete and limited to a set of symbols or codes. The government of "Un" believed that by
+          restricting language to an analog form, they could more easily control the flow of information and prevent the
+          spread of dissent and rebellion. They monitored all forms of communication, including face-to-face
+          conversations, phone calls, and other forms of analog communication, to ensure that their control over
+          language and information was absolute. <br><br>
+          Analog communication in humans refers to the non-verbal ways in which we communicate, such as body language,
+          tone of voice, facial expressions, and gestures. It is a form of communication that is continuous and can
+          convey a lot of information without the use of words. For example, a smile can convey happiness, a frown can
+          convey sadness, and crossing arms can convey defensiveness. Analog communication is a critical component of
+          human interaction as it often provides contextual information that helps people understand the meaning behind
+          words. <br><br>
+        </p>
+      </div>
+
+      <audio src="../sound/intro.wav" autoplay id="wave"></audio>
+
+      <audio id="frog" controls autoplay>
+        <source src="./Part_3.mp4">
+      </audio>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <script>
+
+    document.getElementById("wave").volume = 0.05;
+    document.getElementById("frog").volume = 2;
+
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+  </script>
+
+  <script src="sketch.js"></script>
+
+
+
+</body>
+
+</html>

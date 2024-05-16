@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Part 2 — War </title>
+
+  <link rel="stylesheet" type="text/css" href="../change/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script defer src="../resp.js"></script>
+
+</head>
+
+<body>
+  <div class="mobile-message">
+    Sorry, the site is not optimized for mobile viewing.
+  </div>
+
+  <div id="cover">
+    <span class="part"> PART 2 </span>
+    WAR
+  </div>
+
+  <div class="container">
+
+
+    <div class="left">
+      <div class="l-container">
+
+        <img src="./images/plan(1).gif" alt="">
+        <img src="./images/nuclear(1).gif" alt="">
+        <img src="./images/war.gif" alt="">
+        <img src="./images/jet.jpg" alt="">
+        <img src="./images/test.gif" alt="">
+
+
+        <div class="info" onclick="myFunction()" style="margin-bottom: 2vh;">
+          <p>
+            READ EXPANDED SUMMARY
+          </p>
+        </div>
+
+        <div id="myDIV" style="display: none;">
+          <p>
+            <br>
+            The idea of a single peaceful state inspired by the formation of Tunel, did not bring an end to conflicts.
+            Instead, it created new tensions and struggles. The protests by the people of China for union with
+            neighbouring countries were perceived as a threat by the Chinese government, leading to a brutal attack on
+            Mongolia. This sparked a long and devastating war that lasted 80 years, causing widespread suffering and
+            turmoil throughout the world. <br><br>
+            The Chinese government's use of the peaceful protests as a pretext for war was a tragic outcome of the
+            desire for unity and peace. The war had far-reaching effects, leading to loss of life, displacement of
+            people, and widespread destruction. The events of this conflict served as a reminder of the complex and
+            delicate nature of political and social relationships, and the importance of finding peaceful solutions to
+            conflicts. <br><br>
+            The devastating war formed new alliances and ultimately ended with the America and Eurasia alliance as
+            victors. In their pursuit of control, they made the entire world submit to their rule, imposing a
+            totalitarian system on all people. This new society was characterised by complete control and power being
+            held in the hands of a small group, with limited individual freedoms and severe consequences for dissent.
+            <br><br>
+            The toll of the war was enormous, with only half of the global population surviving. The aftermath of the
+            war was marked by widespread loss, displacement, and trauma. Despite this, the victors pressed on with their
+            vision of a unified world, imposing their rule and system on all people. This new society was a stark
+            contrast to the diverse and decentralised world that existed before, and it brought with it new challenges
+            and struggles. The events of this war and the aftermath serve as a warning of the dangers of unchecked power
+            and the importance of finding peaceful solutions to conflicts. <br><br>
+            The year was 2103. <br><br>
+
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- —————————————————————————————————————————————————————————————————————————————————————————————————————— -->
+    <div class="right">
+
+      <audio src="../sound/intro.wav" autoplay id="wave"></audio>
+
+      <audio id="frog" controls autoplay>
+        <source src="./Part_2.mp4">
+      </audio>
+
+      <div class="header">
+        <p> PART 2 - WAR </p>
+      </div>
+
+      <br><br>
+
+      <div class="fixed">
+        <p>
+          WORLD MAP <br>
+          Y.2103
+        </p>
+        <div class="vid">
+          <img src="../change/images/nullWar.jpg" alt="">
+        </div>
+      </div>
+
+      <br><br>
+
+      <a href="../change/index.html">
+        <div class="info" style="width: 90%; margin-left: auto; margin-right: auto;">
+          <p>
+            PART 1 — CHANGE
+          </p>
+        </div>
+      </a>
+
+      <br>
+
+      <a href="../union/index.html">
+        <div class="info" style="width: 90%; margin-left: auto; margin-right: auto;">
+          <p>
+            PART 3 — UNION
+          </p>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- —————————————————————————————————————————————————————————————————————————————————————————————————————— -->
+
+  </div>
+
+  <script>
+    document.getElementById("wave").volume = 0.05;
+    document.getElementById("frog").volume = 2;
+
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    } 
+  </script>
+
+</body>
+
+</html>

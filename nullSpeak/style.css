@@ -1,0 +1,79 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
+.mobile-message {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  background-color: black;
+  display: none;
+}
+
+#cover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: +2;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  font-size: 7rem;
+  animation: fadeIn 6s ease-in-out;
+  animation-fill-mode: forwards;
+  line-height: 1em;
+}
+
+.part{
+  font-size: 1.5rem;
+}
+
+@keyframes fadeIn{
+  0%, 85%{
+    color: black;
+    opacity: 1;
+  }
+
+  75%{
+    height: 100%;
+    color: white;
+    transform: scale(1.05);
+  }
+
+  95%{
+    opacity: 1;
+  }
+
+  100%{
+    color: black;
+    height: 0%;
+    opacity: 0;
+  }
+}
+
+.null{
+  display: block;
+  position: absolute;
+  border: 1px solid white;
+  width: 25vw;
+  margin-top: 25vh;
+  margin-left: 25vw;
+}
+
+
+canvas {
+  display: block;
+  position: relative;
+  z-index: -1;
+}

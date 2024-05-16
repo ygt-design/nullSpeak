@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>*</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+
+  <script defer src="../resp.js"></script>
+
+</head>
+
+<body>
+  <div class="mobile-message">
+    Sorry, the site is not optimized for mobile viewing.
+  </div>
+
+  <div class="mobile-message">
+    Sorry, the site is not optimized for mobile viewing.
+  </div>
+
+  <div id="sketchHolder"></div>
+
+  <img src="./nullPost.jpg" alt="" class="null">
+  <!-- <div>
+        nğא	 00010101 0101001011 01001110  —- hלֹאஃخ" 
+     </div>  -->
+
+  <audio src="../sound/intro.wav" loop autoplay id="wave"></audio>
+
+  <audio id="frog" loop autoplay>
+    <source src="./Part_4.mp4">
+  </audio>
+
+
+
+
+  <script>
+    document.getElementById("wave").volume = 0.05;
+    document.getElementById("frog").volume = 1; 
+  </script>
+
+  <script src="sketch.js"></script>
+</body>
+
+</html>

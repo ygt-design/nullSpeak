@@ -1,0 +1,270 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overscroll-behavior-y: none;
+  /* overflow: hidden; */
+  background-color: black;
+  font-family: 'Space Mono', monospace;
+  font-weight: medium; 
+  font-style: normal;
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
+audio{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+}
+
+.mobile-message {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  background-color: black;
+  display: none;
+}
+
+#cover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: +2;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  font-size: 7rem;
+  animation: fadeIn 6s ease-in-out;
+  animation-fill-mode: forwards;
+  line-height: 1em;
+}
+
+.part{
+  font-size: 1.5rem;
+}
+
+img{
+  width: 70vw;
+  height: 70vh;
+  border: 1px solid white;
+}
+
+.eightyFour{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  color: white;
+  font-size: 15rem;
+  width: 70vw;
+  margin-top: 2vh;
+  background-image: url("./images/eightyFour.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.lie{
+  background-color:none;
+  margin: 15vh;
+  /* mix-blend-mode: multiply; */
+  mix-blend-mode: exclusion;
+}
+
+
+
+@keyframes fadeIn{
+  0%, 85%{
+    color: black;
+    opacity: 1;
+  }
+
+  75%{
+    height: 100%;
+    color: white;
+    transform: scale(1.05);
+  }
+
+  100%{
+    color: black;
+    height: 0%;
+    opacity: 0;
+  }
+}
+
+.thresh{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  filter: contrast(500);
+  background-color: black;
+  animation: contAni 8s cubic-bezier(.2, 0, 0, 1);
+  animation-fill-mode: forwards; 
+  animation-delay: 6s;
+
+  opacity: 0.2;
+}
+
+h1 {
+  display: block;
+  position: relative;
+
+  font-size: 15rem;
+  font-weight: 200;
+  line-height: 1;
+  filter: blur(0.5rem);
+  animation: letterspacing 10s cubic-bezier(.2, 0, 0, 1);
+  
+  letter-spacing: 1rem;
+  color: black;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  background-color: black;
+}
+
+#letters{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5vh;
+
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+}
+
+.single{
+  display: flex;
+  /* width:  400px; */
+  height: 500px;
+  border: 1px solid white;
+  margin-top: 5vh;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+  transition: all 700ms ease;
+}
+
+.single:hover{
+  background-color: white;
+  color: black;
+  cursor: crosshair;
+}
+
+#sketchHolder{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  overflow: hidden;
+  width: 70vw;
+}
+
+.typeHead{
+  color: white;
+  margin: auto;
+  width: 70vw;
+  margin-bottom: 2vh;
+  margin-top: 5vh;
+}
+
+section{
+  margin-top: 5vh;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 70vw;
+}
+
+.hyper{
+  border: 1px solid white;
+  /* height: 50px; */
+  margin-bottom: 2vh;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.hyper{
+  border: 1px solid white;
+  transition: all 700ms ease;
+}
+
+.hyper p{
+  margin: 2vh;
+  transition: all 700ms ease;
+  color: white;
+}
+
+.hyper:hover p{
+  background-color: white;
+  color: black;
+  cursor:crosshair;
+}
+
+.hyper:hover{
+  background-color: white;
+  color: black;
+  cursor:crosshair;
+}
+
+@keyframes letterspacing {
+  0% {
+      letter-spacing: -10rem;
+      filter: blur(1rem);
+      color: black;
+  }
+
+  60% {
+      color: white;
+      filter: blur(0.5rem);
+  }
+
+  100% {
+      letter-spacing: 1rem;
+      filter: blur(0rem);
+      color: white;
+  }
+}
+
+@keyframes contAni {
+  0% {
+      background-color: black;
+      opacity: 1;
+  }
+
+  80% {
+      color: black;
+  }
+
+  100% {
+      opacity: 1;
+      color: black;
+  }
+}
+
+
+

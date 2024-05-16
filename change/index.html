@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Part 1 — Change </title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script defer src="../resp.js"></script>
+
+</head>
+
+<body>
+  <div class="mobile-message" style="color: white;">
+    Sorry, the site is not optimized for mobile viewing.
+  </div>
+
+  <!-- <audio autoplay>
+      <source src="./audio/chnage.wav">
+      <source src="./audio/chnage.ogg">
+    </audio> -->
+
+  <div id="cover">
+    <span class="part"> PART 1 </span>
+    CHANGE
+
+  </div>
+  <div class="container">
+
+    <div class="left">
+      <div class="l-container">
+
+        <img src="./images/web.jpg" alt="">
+        <img src="./images/rev.gif" alt="">
+        <img src="./images/web01.jpg" alt="">
+        <img src="./images/tsunami.gif" alt="">
+
+        <div class="info" onclick="myFunction()" style="margin-bottom: 2vh;">
+          <p>
+            READ EXPANDED SUMMARY
+          </p>
+        </div>
+
+        <div id="myDIV" style="display: none;">
+          <p>
+            <br>
+            The world was rocked by multiple natural disasters, causing widespread destruction and suffering. Despite
+            historical tensions and conflicts, countries came together in a show of unity and compassion to offer aid
+            and support to those affected. Borders were temporarily forgotten as nations, previously seen as enemies,
+            worked together to provide resources and assistance. <br><br>
+            This unexpected display of cooperation and unity demonstrated the common humanity that exists across borders
+            and political divides. In the face of devastating events, people set aside their differences and came
+            together to help their fellow human beings. This showed the world that even in the darkest of times, there
+            is hope for unity and compassion. <br><br>
+            The outpouring of support from countries around the world served as a reminder of the power of collective
+            action and the importance of working together to overcome adversity. The events of this natural disaster
+            showed that, when faced with a common challenge, people can come together to make a difference and bring
+            hope to those in need. <br><br>
+            The idea of unity inspired certain groups to form a single nation, leading to protests and revolutions
+            worldwide to break down political borders. The first union nation, "Tunel," was formed and included regions
+            starting from northwest Bosnia, through Turkey, Azerbaijan, across the Caspian Sea to the northeast of
+            Uzbekistan and Turkmenistan. <br><br>
+            Though some countries perceived the formation of "Tunel" as a threat, some got inspired and formed a single
+            state among Scandinavia/ the United States, Greenland and Canada/ Russia, Kazakhstan, and Mongolia/ and
+            Australia, Papua New Guinea, Fiji, New Zealand, and New Caledonia. All these got united under RNU (Roofed
+            Nations Union). <br><br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- —————————————————————————————————————————————————————————————————————————————————————————————————————— -->
+    <div class="right">
+
+      <audio src="../sound/intro.wav" autoplay id="wave"></audio>
+
+      <audio id="frog" controls autoplay>
+        <source src="./Part_1.mp4">
+      </audio>
+
+      <div class="header">
+        <p> PART 1 - CHANGE </p>
+      </div>
+
+      <br><br>
+
+      <div class="fixed">
+        <p>
+          WORLD MAP <br>
+          Y.2055
+        </p>
+        <div class="vid">
+          <img src="./images/NullMap—Intro.jpg" alt="">
+        </div>
+      </div>
+
+      <br><br>
+      <a href="../index.html">
+        <div class="info" style="width: 90%; margin-left: auto; margin-right: auto;">
+          <p>
+            HOME
+          </p>
+        </div>
+      </a>
+      <br>
+
+      <a href="../war/index.html">
+        <div class="info" style="width: 90%; margin-left: auto; margin-right: auto;">
+          <p>
+            PART 2 — WAR
+          </p>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- —————————————————————————————————————————————————————————————————————————————————————————————————————— -->
+
+  </div>
+
+  <script>
+
+    document.getElementById("wave").volume = 0.05;
+    document.getElementById("frog").volume = 2;
+
+
+
+    function myFunction() {
+
+      let x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+
+    } 
+  </script>
+
+  <!-- <script src="sketch.js"></script> -->
+</body>
+
+</html>
